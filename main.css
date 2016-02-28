@@ -1,5 +1,6 @@
 body {
-	background-image src:("pickmonkey_image.jpg");
+	background-image: url("http://share-fastly.picmonkey.com/prod/photo_posts/GvJsg4XV7Gq_13369249.jpg");
+	background-size: 3000px;
 	height: 100%;
 	margin: 0;
 	text-align: center;
