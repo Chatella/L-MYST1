@@ -58,7 +58,8 @@ video {
   min-width: 140px;
   flex: 1;
 }
-
+a {color:white;
+}
 .nav h1 {
   padding-left: 20px;
 }
