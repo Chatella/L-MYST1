@@ -1,6 +1,9 @@
 body {
 	background-image: url("http://www.axsysnav.eu/wp-content/uploads/2014/07/space.jpg");
-	background-size: 1500px;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
 	height: 100%;
 	margin: 0;
 	text-align: center;

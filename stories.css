@@ -1,6 +1,10 @@
 body {
 	background-image: 
 	url("http://28oa9i1t08037ue3m1l0i861.wpengine.netdna-cdn.com/wp-content/uploads/2014/05/Stars-fixed.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
 	height: 100%;
 	margin: 0;
 	text-align: center;
