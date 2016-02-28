@@ -1,0 +1,26 @@
+body {
+	background-image src:("pickmonkey_image.jpg");
+	height: 100%;
+	margin: 0;
+	text-align: center;
+	width: 100%;
+}
+
+h1 {
+	font-size: 64px;
+  font-family: Palatino, 'Palatino Linotype', serif;
+  color: lavender;
+}
+.intro {color: lavender;}
+h2 {
+	font-size: 56px;
+}
+
+div {color:lavender;}
+
+p {
+  font-size: 2rem;
+}
+
+a{color:rgb(300,30,300);
+	font-size: 32px;}

@@ -1,0 +1,37 @@
+<!DOCTYPE>
+<html>
+<head>
+<script src="https://cdn.firebase.com/js/client/2.4.1/firebase.js"></script>
+<link rel="stylesheet" type="text/css" href="stories.css"/>
+	<title>TTTKYstories</title>
+</head>
+<body>
+	<h1>Stories
+  </h1>
+  <a href="tttky.html">Homepage
+  </a>
+
+ 
+  <div id="posts"></div>
+   
+
+
+</form>
+</body>
+<script type="text/javascript">
+	var ref = new Firebase("https://amber-inferno-1703.firebaseio.com/posts/");
+	
+	ref.on("child_added", function(snapshot, prevChildKey) {
+  var newPost = snapshot.val();
+  console.log("alias: " + newPost.alias);
+  console.log("title: " + newPost.title);
+  console.log("story: " + newPost.story);
+  newPost.story = newPost.story.replace(new RegExp("\n", 'g'), "<br><br>");
+  var posts=document.getElementById("posts");
+  posts.innerHTML ="<p class='blue medium'>" + newPost.story + "</p><br>" + posts.innerHTML;
+  posts.innerHTML = "<p class='small'>" + "Written by: " + newPost.alias + "</p>" + posts.innerHTML;
+  posts.innerHTML =  "<p class='underline'>" + newPost.title + "</p>" + posts.innerHTML;
+});
+
+</script>
+</html>

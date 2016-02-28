@@ -1,0 +1,58 @@
+<!DOCTYPE>
+<html>
+<head>
+<script src="https://cdn.firebase.com/js/client/2.4.1/firebase.js"></script>
+
+<link rel="stylesheet" type="text/css" href="main.css"/>
+	<title>Life Makes You Stronger</title>
+</head>
+<body>
+	<h1>L-MYST
+  </h1> 
+  <a href="stories.html">Stories</a>
+  <div class="Intro">
+  	<h3><p>I've always liked the idea of writing a fiction book over writing an essay.  For some odd reason, stories feel more real to me.  In a way, all the little lies and not-quite-truths seem to hold more truth than facts do because they can convey what you feel more than what really happened.  Let us think about certain events in your life.  Maybe they took a few minutes.  In your head, those few minutes felt more like hours.  The clouds outside felt more like rainstorms.  The sight of your kitchen felt more like home than the reality of rotting fruit on the counter.  Sometimes, story-telling gives you the chance to express your thoughts in a way that others can relate to, other times it gives you the chance to make those feelings as big as when you felt them.  I want to make you feel and see things just by typing a few words.  I want you to be sucked in and trapped inside my tale, not have you just skim through because you feel you must. </p></h3>
+  	
+  	<p>I'm about to tell you some stories.  Whether it's real or not you can decide. Please share your stories too.  Remember, what doesn't kill you makes you stronger. 
+  	<br>Love, Kaetza, Michele, and Nalla</p>
+  	</div>
+  	
+  	<br>
+  	<div>
+    Alias: <input type="text" name="name" value="" id="alias" size="25" maxlength="50" /><br>
+    <br>
+    Title: <input type="text" name="title" value="" id="title" size="25" maxlength="50"/><br>
+    <br>
+    <p> My Story: </p><textarea rows="25" cols="100" name="mystory" id="story"></textarea><br>
+    <br>
+</div>
+        <button onclick="submit()">Submit Story!</button>
+
+<script type= "text/javascript">
+	function submit(){
+		var myFirebaseRef = new Firebase("https://amber-inferno-1703.firebaseIO.com/posts/");
+		var storyRef = myFirebaseRef.push()
+		var myalias = document.getElementById('alias').value
+		var mytitle = document.getElementById('title').value
+		var mystory = document.getElementById('story').value
+		storyRef.set({
+			alias: myalias,
+			title: mytitle,
+			story: mystory
+		}
+		,function(error)
+		{
+		if(error) {
+		    alert("Data could not be saved." + error);
+		  } else {
+		    alert("Data saved successfully.");
+		  }});
+  return (true)
+	}
+
+</script>
+<br>
+
+<a href="mailto:TTTKYstories@gmail.com">Send mail!</a>
+</body>
+</html>

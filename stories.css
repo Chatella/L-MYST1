@@ -1,0 +1,28 @@
+body {
+	background-image: 
+	url("http://28oa9i1t08037ue3m1l0i861.wpengine.netdna-cdn.com/wp-content/uploads/2014/05/Stars-fixed.jpg");
+	height: 100%;
+	margin: 0;
+	text-align: center;
+	width: 100%;
+}
+
+h1 {
+	font-size: 64px;
+  font-family: Palatino, 'Palatino Linotype', serif;
+  color: lavender;
+}
+
+
+h2 {color:lavender;
+font-size: 48px;}
+
+p {color:lavender;
+  font-size: 2rem;
+}
+.blue{color:#add8e6;}
+.underline{text-decoration: underline;}
+.small{font-size: 16px;}
+.medium{font-size: 24px;}
+a{color:rgb(300,30,300);
+	font-size: 32px;}
